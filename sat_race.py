@@ -7,6 +7,8 @@ import time
 
 
 class SatRace:
+
+
 	def __init__(self,race_id):
 		self.race_id = race_id
 		self.url = f"https://race.netkeiba.com/race/result.html?race_id={self.race_id}&rf=race_list"
@@ -22,7 +24,7 @@ class SatRace:
 
 
 	def info(self):
-		"""レース情報をリストで返す"""
+		#レース情報をリストで返す
 		data_intro = self.soup.find('div', class_='RaceList_Item02').find_all('span')
 		intros = []
 		for data in data_intro:
@@ -156,7 +158,7 @@ class SatRace:
 
 
 	def dark_horses(self):
-		"""穴馬を抜粋"""
+		#穴馬を抜粋
 		results = self.result()
 		dark_horses = []
 		for result in results:
@@ -166,7 +168,7 @@ class SatRace:
 
 
 	def simple_dark(self):
-		"""シンプルな穴馬情報({id,info},{馬番,通過})"""
+		#シンプルな穴馬情報({id,info},{馬番,通過})
 		dark_horses = self.dark_horses()
 		info = []
 		infos = self.info()
@@ -209,7 +211,7 @@ class SatRace:
 
 
 	def lap(self):
-		"""ラップをリストで返す"""
+		#ラップをリストで返す
 		try:
 			lap_soup = self.soup.find('div', class_='Table_Scroll').find_all('tr')
 		except AttributeError:
@@ -227,7 +229,7 @@ class SatRace:
 
 	
 	def pace(self):
-		"""ラップからペースを返す"""
+		#ラップからペースを返す
 		if self.lap() == ['ペースデータなし']:
 			return 'ペースデータなし'
 		else:
@@ -239,7 +241,7 @@ class SatRace:
 
 
 	def pace_decision(self):
-		"""ペース判定"""
+		#ペース判定
 		try:
 			soup = self.soup.find('div', class_='RapPace_Title').find_all('span')
 		except AttributeError:

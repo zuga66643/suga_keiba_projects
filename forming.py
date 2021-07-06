@@ -8,6 +8,7 @@ import os
 
 #['2021', '東京', '1', '1']
 def f_result(info):
+    #GUIフォームから該当のページを作成
     places = ['札幌','函館','福島','新潟','東京','中山','中京','京都','阪神','小倉']
     i = 0
     for place in places:

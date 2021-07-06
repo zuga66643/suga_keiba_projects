@@ -16,7 +16,7 @@ def deployment_data(race_id):
 
 
 def deployment(data, race_id):
-
+    #展開予想図作成、保存
     deployment_list = data[race_id]
     for v in deployment_list:
         v[0] = int(v[0])

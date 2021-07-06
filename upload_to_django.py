@@ -17,7 +17,7 @@ def deployment_data(race_id):
 
 
 def deployment(data, race_id):
-
+    #展開図を作成、djangoのimageに保存
     deployment_list = data[race_id]
     for v in deployment_list:
         v[0] = int(v[0])
@@ -113,6 +113,7 @@ def add_dayall(race_id_list):
 
 
 def png_removed():
+    #djangoのimageフォルダ内削除
     p = f'/Users/puyol/Documents/django/keiba_forecast/keiba_forecasts/static/deployment/'
     static = os.listdir(p)
     deployment_passes = []

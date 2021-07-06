@@ -28,7 +28,7 @@ class SunRace:
 
 
 	def info(self):
-		"""レース情報をリストで返す"""
+		#レース情報をリストで返す
 		data_intro = self.soup.find('div', class_='RaceList_Item02').find_all('span')
 		intros = []
 		for data in data_intro:

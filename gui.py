@@ -2,10 +2,10 @@ import tkinter as tk
 from tkinter import StringVar, ttk, font
 from tkinter.constants import CENTER
 from ttkthemes import *
-from prac import f_result
+from forming import f_result
 
 
-
+#GUIから保存済みのデータを表示させる
 root = ThemedTk()
 root.title('日曜日に勝つ競馬予想')
 root.geometry('640x480+100+200')

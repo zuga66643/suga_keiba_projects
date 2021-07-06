@@ -20,7 +20,7 @@ class SatRaces:
 
 
 	def day_show(self):
-		"""1日の結果を表示"""
+		#1日の結果を表示
 		for race in self.sat_races: 
 			print(race.race_id)
 			print(race.info())

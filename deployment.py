@@ -1,9 +1,8 @@
 from sun_race import SunRace
 import matplotlib.pyplot as plt
-import japanize_matplotlib
 import numpy as np
 from PIL import Image
-
+import japanize_matplotlib
 
 
 def deployment_data(race_id):

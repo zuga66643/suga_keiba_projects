@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import StringVar, ttk, font
+from tkinter import StringVar, ttk
 from tkinter.constants import CENTER
 from ttkthemes import *
 from forming import f_result

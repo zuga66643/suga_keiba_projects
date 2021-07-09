@@ -1,7 +1,3 @@
-import time
-import re
-
-
 from sat_race import SatRace
 
 

@@ -1,6 +1,4 @@
 import tkinter as tk
-from tkinter import font
-import tkinter.ttk as ttk
 from ttkthemes import *
 import csv
 from PIL import Image

@@ -5,6 +5,7 @@ from sat_races import SatRaces
 from sun_race import SunRace
 from sun_races import SunRaces
 from deployment import deployment
+import japanize_matplotlib
 
 class Forecast:
 	"""予想を組み立てる"""

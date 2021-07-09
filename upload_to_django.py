@@ -1,9 +1,8 @@
 from sun_race import SunRace
 import matplotlib.pyplot as plt
-import japanize_matplotlib
 import numpy as np
-from PIL import Image
 import os
+import japanize_matplotlib
 
 
 
@@ -128,7 +127,7 @@ def png_removed():
 
 
 #djangoの更新(金曜昼に土曜分か土日分)
-#race_id_list = [202103010101,202110030101,202102010101]
+#race_id_list = [202103010301,202110030301,202102010301]
 #dayall_deployment_forecast(race_id_list)
 
 #djangoの更新(土曜昼に日曜分)
